@@ -38,7 +38,7 @@ const list = {
   'com.ideack.BusinessCard': { cm: 'sjblb', hx: 'hxpda', id: "BusinessCardVipPerpetual", latest: "liulongxuan" }, //名片夹
   'com.ideack.MagicAudio': { cm: 'sjblb', hx: 'hxpdb', id: "MagicAudioPermanent", latest: "liulongxuan" }, //音乐剪辑
   'DuChuangZhe': { cm: 'sjbla', hx: 'hxpda', id: "org.zrey.du.main", latest: "liulongxuan" }, //独创者
-  'PhotoWhite': { cm: 'sjblb', hx: 'hxpda', id: "org.zrey.photowhite.flash_lifesjbl", latest: "liulongxuan" },  //印白相册
+  'PhotoWhite': { cm: 'sjblb', hx: 'hxpda', id: "org.zrey.photowhite.flash_lifetime", latest: "liulongxuan" },  //印白相册
   'FETreeVideoChange': { cm: 'sjblb', hx: 'hxpda', id: "com.dj.videototext.forever", latest: "liulongxuan" },  //视频转文字
   '%E5%B0%8F%E5%B0%8F%E7%9B%B8%E6%9C%BA%E5%A4%A7%E5%B8%88': { cm: 'sjblb', hx: 'hxpda', id: "com.ai.merge.forever.vip", latest: "liulongxuan" },  //乐颜
   'FoodIdentificationTool': { cm: 'sjblb', hx: 'hxpda', id: "20002", latest: "liulongxuan" },  //剂查查
@@ -48,7 +48,7 @@ const list = {
   'YinzhangMaster': { cm: 'sjblb', hx: 'hxpda', id: "com.xiaoqi.seal.forever", latest: "liulongxuan" },  //印章大师
   'com.cuilingshi.flipclock': { cm: 'sjblb', hx: 'hxpda', id: "FlipClockProVersion", latest: "liulongxuan" },  //翻页时钟
   'com.maine.aifill': { cm: 'sjblb', hx: 'hxpda', id: "com.maine.aifill.unlimited", latest: "liulongxuan" },  //AI FILL-智能填充.换衣/换背景
-  'DeviceFinder': { cm: 'sjblb', hx: 'hxpda', id: "com.wonderfind.lifesjbl", latest: "liulongxuan" },  //Wonderfind-设备查找
+  'DeviceFinder': { cm: 'sjblb', hx: 'hxpda', id: "com.wonderfind.lifetime", latest: "liulongxuan" },  //Wonderfind-设备查找
   'Graphionica': { cm: 'sjbla', hx: 'hxpda', id: "premium_year", latest: "liulongxuan" },  //Graphionica
   'AIAssistant': { cm: 'sjbla', hx: 'hxpda', id: "AIchat_1w_7.99_trial", latest: "liulongxuan" },  //AIAssistant
   'MonitorPlus': { cm: 'sjblb', hx: 'hxpda', id: "com.unhonin.MonitorPlus.proversion", latest: "liulongxuan" },  //Monitor+
@@ -64,7 +64,7 @@ const list = {
   'com.alphamobiletech.facey': { cm: 'sjblb', hx: 'hxpda', id: "Facey_Forever", latest: "liulongxuan" }, //Facey-专业彩妆P图神器
   'Packet': { cm: 'sjblb', hx: 'hxpda', id: "com.aaaalab.nepacket.iap.full", latest: "liulongxuan" }, //HTTPS抓包
   'AllMyBatteries': { cm: 'sjblb', hx: 'hxpda', id: "AllMyBatteries_Ultimate", latest: "liulongxuan" }, //AllMyBatteries-电池管家
-  'VDIT': { cm: 'sjblb', hx: 'hxpda', id: "me.imgbase.videoday.profeaturesLifesjbl", latest: "liulongxuan" }, //VDIT-视频转换
+  'VDIT': { cm: 'sjblb', hx: 'hxpda', id: "me.imgbase.videoday.profeatureslifetime", latest: "liulongxuan" }, //VDIT-视频转换
   'CodeSnippet': { cm: 'sjbla', hx: 'hxpda', id: "it.beatcode.codesnippetpro.annualSubscription", latest: "liulongxuan" }, //CodeSnippet
   'darkWeb': { cm: 'sjbla', hx: 'hxpda', id: "dforce_unlock_all_functions", latest: "liulongxuan" }, //DForce-Safari扩展
   'BookReader': { cm: 'sjbla', hx: 'hxpda', id: "com.reader.1year", latest: "liulongxuan" }, //阅读器-小说阅读器
@@ -84,7 +84,7 @@ const list = {
   'MoneyWiz': { cm: 'sjbla', hx: 'hxpda', id: "com.moneywiz.personalfinance.1year", latest: "liulongxuan" }, //MoneyWiz-个人财务
   'qxzs': { cm: 'sjblb', hx: 'hxpda', id: "yongjiu", latest: "liulongxuan" },//心率广播
   'Overdrop': { cm: 'sjblb', hx: 'hxpda', id: "com.weather.overdrop.forever", latest: "liulongxuan" }, //Overdrop-天气预报
-  'Boom': { cm: 'sjblb', hx: 'hxpda', id: "com.globaldelight.iBoom.LifesjblDiscountPack", latest: "liulongxuan" }, //Boom-感受音乐
+  'Boom': { cm: 'sjblb', hx: 'hxpda', id: "com.globaldelight.iBoom.lifetimeDiscountPack", latest: "liulongxuan" }, //Boom-感受音乐
   'PDFReaderPro%20Free': { cm: 'sjblb', hx: 'hxpda', id: "com.pdfreaderpro.free.member.all_access_pack_permanent_license.001", latest: "liulongxuan" }, //PDFReaderProFree
   'VideoHelper': { cm: 'sjblb', hx: 'hxpda', id: "vip_service", latest: "liulongxuan" }, //媒关系
   'Digital%20Planner': { cm: 'sjbla', hx: 'hxpda', id: "com.softwings.DigitalPlanner.1year", latest: "liulongxuan" }, //电子手帐
@@ -106,14 +106,14 @@ const list = {
   'VideoEditor': { cm: 'sjblb', hx: 'hxpda', id: "com.god.videohand.alwaysowner", latest: "liulongxuan" }, //VideoShot
   'PhotoMovie': { cm: 'sjbla', hx: 'hxpda', id: "com.mediaeditor.photomovie.year", latest: "liulongxuan" }, //PhotoMovie-照片视频
   'ShotOn': { cm: 'sjblb', hx: 'hxpda', id: "com.colin.shoton.forevervip", latest: "liulongxuan" }, //ShotOn
-  'PhimCiaj': { cm: 'sjblb', hx: 'hxpda', id: "com.jiancent.calligraphymaster.lifesjbl", latest: "liulongxuan" }, //练字大师
+  'PhimCiaj': { cm: 'sjblb', hx: 'hxpda', id: "com.jiancent.calligraphymaster.lifetime", latest: "liulongxuan" }, //练字大师
   'sjblCut': { cm: 'sjbla', hx: 'hxpda', id: "com.floatcamellia.hfrslowmotion.forevervip", latest: "liulongxuan" },  //sjblCut
   'com.floatcamellia.motiok': { cm: 'sjbla', hx: 'hxpda', id: "com.floatcamellia.motiok.vipforever", latest: "liulongxuan" },  //Hype_Text-AE特效片制作
   'POPOLockScreenWidgetable': { cm: 'sjbla', hx: 'hxpda', id: "com.widget.fightenegery.yearly", latest: "liulongxuan" },  //多彩壁纸
   'GreetingScanner': { cm: 'sjbla', hx: 'hxpda', id: "com.alphaplus.greetingscaner.w.b", latest: "liulongxuan" },  //扫描识别王
   'FancyCamPlus': { cm: 'sjbla', hx: 'hxpda', id: "com.alphaplus.fancycam.year.198", latest: "liulongxuan" },  //悦颜相机
   'Again': { cm: 'sjblb', hx: 'hxpda', id: "com.owen.again.profession", latest: "liulongxuan" },  //Again-稍后阅读器
-  'remotelg': { cm: 'sjblb', hx: 'hxpda', id: "com.gqp.remotelg.lifesjbl", latest: "liulongxuan" },  //UniversalRemoteTV+ 遥控器
+  'remotelg': { cm: 'sjblb', hx: 'hxpda', id: "com.gqp.remotelg.lifetime", latest: "liulongxuan" },  //UniversalRemoteTV+ 遥控器
   'Notebook': { cm: 'sjbla', hx: 'hxpda', id: "com.zoho.notebook.ios.personal.yearly", latest: "liulongxuan" },  //Notebook
   'com.damon.dubbing': { cm: 'sjbla', hx: 'hxpda', id: "com.damon.dubbing.vip12", latest: "liulongxuan" },  //有声英语绘本
   'film': { cm: 'sjbla', hx: 'hxpda', id: "pro_auto_subscribe_year_ovs", latest: "liulongxuan" },  //胶卷相机
@@ -127,7 +127,7 @@ const list = {
   'habitdot': { cm: 'sjblb', hx: 'hxpda', id: "habitdots_pro_forever", latest: "liulongxuan" },  //习惯点点
   'MeowTalk': { cm: 'sjbla', hx: 'hxpda', id: "meowtalk.month.basic.autorenewable.subscription", latest: "liulongxuan" },  //喵说
   'stretchworkout': { cm: 'sjbla', hx: 'hxpda', id: "com.abishkking.premiumYearStretch", latest: "liulongxuan" },  //拉伸运动
-  'Planist': { cm: 'sjbld', hx: 'hxpda', id: "org.zrey.planist.main", ids: "org.zrey.planist.lifesjbl", latest: "liulongxuan" },  //Planist
+  'Planist': { cm: 'sjbld', hx: 'hxpda', id: "org.zrey.planist.main", ids: "org.zrey.planist.lifetime", latest: "liulongxuan" },  //Planist
   'com.uzstudio.avenuecast.ios': { cm: 'sjblb', hx: 'hxpda', id: "1001", latest: "liulongxuan" },  //凡视知音
   'CongZhenBaZi': { cm: 'sjblb', hx: 'hxpda', id: "vip_forever_78", latest: "liulongxuan" },  //八字排盘-从真版
   'CongZhenQiMen': { cm: 'sjbla', hx: 'hxpda', id: "cn.congzhen.CongZhenQiMen.yearlyplan", latest: "liulongxuan" },  //奇门遁甲
@@ -218,9 +218,9 @@ const list = {
   'MoMoShouZhang': { cm: 'sjbla', hx: 'hxpda', version: "1", id: "shunchangshouzhangQuarterlyPlus", latest: "liulongxuan" },  //卡卡手账(需试用)
   'Mindkit': { cm: 'sjblb', hx: 'hxpda', version: "207", id: "mindkit_permanently", latest: "liulongxuan" },  //Mindkit
   'DailySpending': { cm: 'sjbla', hx: 'hxpda', version: "2011", id: "com.xxtstudio.dailyspending.year", latest: "liulongxuan" },  //Daily记账
-  'Miary': { cm: 'sjblb', hx: 'hxpda', version: "48", id: "lifesjbl_sub", latest: "liulongxuan" },  //Miary
+  'Miary': { cm: 'sjblb', hx: 'hxpda', version: "48", id: "lifetime_sub", latest: "liulongxuan" },  //Miary
   'ChatImage': { cm: 'sjbla', hx: 'hxpda', version: "38", id: "com.hk.zhongwenhuatu.year", latest: "liulongxuan" },  //MJ中文版
-  'Noted': { cm: 'sjblb', hx: 'hxpda', version: "742", id: "com.digitalworkroom.noted.plus.lifesjbl", latest: "liulongxuan" },  //Noted-录音笔记软件
+  'Noted': { cm: 'sjblb', hx: 'hxpda', version: "742", id: "com.digitalworkroom.noted.plus.lifetime", latest: "liulongxuan" },  //Noted-录音笔记软件
   'BingQiTools': { cm: 'sjbla', hx: 'hxpda', version: "1", id: "bingqi_e2", latest: "liulongxuan" },  //猫狗翻译
   'AnyDown': { cm: 'sjblb', hx: 'hxpda', version: "1", id: "com.xiaoqi.down.forever", latest: "liulongxuan" },  //AnyDown-下载神器
   'Reader': { cm: 'sjblb', hx: 'hxpda', version: "2", id: "com.xiaoqi.reader.forever", latest: "liulongxuan" },  //爱阅读-TXT阅读器
@@ -230,7 +230,7 @@ const list = {
   'Nutrilio': { cm: 'sjbla', hx: 'hxpda', version: "51", id: "net.nutrilio.one_year_plus", latest: "liulongxuan" },  //Nutrilio
   'Pixiu%E8%AE%B0%E8%B4%A6': { cm: 'sjbla', hx: 'hxpda', version: "20230919", id: "com.RuoG.Pixiu.VIPYear", latest: "liulongxuan" },  //貔貅记账
   'AIHeader': { cm: 'sjbla', hx: 'hxpda', version: "1.0.0.33", id: "com.ai.avatar.maker.month.3dayfree", latest: "liulongxuan" },  //AI头像馆
-  'MoodTracker': { cm: 'sjblb', hx: 'hxpda', version: "21", id: "co.vulcanlabs.moodtracker.lifesjbl2", latest: "liulongxuan" },  //ChatSmith(美区)
+  'MoodTracker': { cm: 'sjblb', hx: 'hxpda', version: "21", id: "co.vulcanlabs.moodtracker.lifetime2", latest: "liulongxuan" },  //ChatSmith(美区)
   'com.dandelion.Routine': { cm: 'sjblb', hx: 'hxpda', version: "364", id: "membership", latest: "liulongxuan" },  //小日常
   'YSBrowser': { cm: 'sjblb', hx: 'hxpda', version: "5", id: "com.ys.pro", latest: "liulongxuan" },  //亚瑟浏览器
   'org.zrey.metion': { cm: 'sjbld', hx: 'hxpda', version: "1", id: "org.zrey.metion.pro", ids: "org.zrey.metion.main", latest: "liulongxuan" },  //Metion-基础+Pro
@@ -240,7 +240,7 @@ const list = {
   'Straw': { cm: 'sjbla', hx: 'hxpda', version: "1", id: "com.1year.eyedropper", latest: "liulongxuan" },  //吸管Pro-取色
   'vibee': { cm: 'sjbla', hx: 'hxpda', version: "3", id: "com.vibee.year.bigchampagne", latest: "liulongxuan" },  //vibee-氛围歌单小组件
   'Lister': { cm: 'sjbla', hx: 'hxpda', version: "1.0.1.1", id: "com.productlab.lister.yearly", latest: "liulongxuan" },  //Lister-计划清单
-  'DrumPads': { cm: 'sjblb', hx: 'hxpda', version: "6392", id: "com.gismart.drumpads.pro_lifesjbl_30", latest: "liulongxuan" },  //BeatMakerGo-打碟机/打击垫/DJ鼓机
+  'DrumPads': { cm: 'sjblb', hx: 'hxpda', version: "6392", id: "com.gismart.drumpads.pro_lifetime_30", latest: "liulongxuan" },  //BeatMakerGo-打碟机/打击垫/DJ鼓机
   'com.photoslab.ai.writerassistant': { cm: 'sjbla', hx: 'hxpda', version: "657", id: "com.photoslab.ai.writerassistant.year", latest: "liulongxuan" },  //Smart AI
   'WaterMaskCamera': { cm: 'sjbla', hx: 'hxpda', version: "1.2.0.102", id: "com.camera.watermark.yearly.3dayfree", latest: "liulongxuan" },  //徕卡水印相机
   'ColorPaint': { cm: 'sjbla', hx: 'hxpda', version: "1", id: "coloring.app.singingfish.year", latest: "liulongxuan" },  //涂色
