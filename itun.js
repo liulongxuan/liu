@@ -27,7 +27,7 @@ const bundle_id = liulongxuan.receipt["bundle_id"] || liulongxuan.receipt["Bundl
 
 const list = {
    'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
-  'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm1023" },  //录音转文字
+  'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "liulongxuan" },  //录音转文字
   'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm1023" },  //Presets:照片处理、图像编辑器
   'GoodTask': { cm: 'timeb', hx: 'hxpda', id: "com.hahainteractive.goodtask3.pro", latest: "ddm1023" },  //代办事项清单-GoodTask
   'com.hanchongzan.period': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.period.frog", latest: "ddm1023" },  //姨妈来咯
