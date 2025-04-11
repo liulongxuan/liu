@@ -13,7 +13,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/blob/main/itun.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/itun.js
 
 [mitm]
 hostname = buy.itunes.apple.com
