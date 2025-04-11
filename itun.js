@@ -53,7 +53,6 @@ const list = {
   'AIAssistant': { cm: 'sjbla', hx: 'hxpda', id: "AIchat_1w_7.99_trial", latest: "liulongxuan" },  //AIAssistant
   'MonitorPlus': { cm: 'sjblb', hx: 'hxpda', id: "com.unhonin.MonitorPlus.proversion", latest: "liulongxuan" },  //Monitor+
   'MessageHold': { cm: 'sjblb', hx: 'hxpda', id: "com.messagehold.forever", latest: "liulongxuan" },  //拦截盾
-  'co.vulcanlabs': { cm: 'sjbla', hx: 'hxpda', id: lifesjblid, latest: "liulongxuan" },  //vulcanlabs合集
   'Guitar%20Gravitas': { cm: 'sjbla', hx: 'hxpda', id: "GuitarGravitasChordsScalesArpeggiosLessons", latest: "liulongxuan" },  //GuitarGravitas
   'com.eleven.chatgpt': { cm: 'sjbla', hx: 'hxpda', id: "com.chatgpt.yearly", latest: "liulongxuan" },  //ChatAI
   'com.casttv.remotetv': { cm: 'sjblb', hx: 'hxpda', id: "liftesjbl2", latest: "liulongxuan" }, //TVRemote电视遥控器
