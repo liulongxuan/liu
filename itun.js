@@ -26,11 +26,11 @@ const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
 const bundle_id = liulongxuan.receipt["bundle_id"] || liulongxuan.receipt["Bundle_Id"];
 
 const list = {
-   'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
+   'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "liulongxuan" },  //时光罐罐
   'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "liulongxuan" },  //录音转文字
-  'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm1023" },  //Presets:照片处理、图像编辑器
-  'GoodTask': { cm: 'timeb', hx: 'hxpda', id: "com.hahainteractive.goodtask3.pro", latest: "ddm1023" },  //代办事项清单-GoodTask
-  'com.hanchongzan.period': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.period.frog", latest: "ddm1023" },  //姨妈来咯
+  'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "liulongxuan" },  //Presets:照片处理、图像编辑器
+  'GoodTask': { cm: 'timeb', hx: 'hxpda', id: "com.hahainteractive.goodtask3.pro", latest: "liulongxuan" },  //代办事项清单-GoodTask
+  'com.hanchongzan.period': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.period.frog", latest: "liulongxuan" },  //姨妈来咯
   'com.damon.dubbing': { cm: 'sjbla', hx: 'hxpda', id: "com.damon.dubbing.vip12", latest: "chxm1023" },  //有声英语绘本
   'film': { cm: 'sjbla', hx: 'hxpda', id: "pro_auto_subscribe_year_ovs", latest: "chxm1023" },  //胶卷相机
   'Muza': { cm: 'sjbla', hx: 'hxpda', id: "com.appmuza.premium_year", latest: "chxm1023" },  //Muza-修图APP
