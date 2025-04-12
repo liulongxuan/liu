@@ -25,5 +25,5 @@ if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     ];
 }
 
-aFengYe = JSON.stringify(obj);
+liulongxuan = JSON.stringify(obj);
 $done(liulongxuan);
