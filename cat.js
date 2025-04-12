@@ -8,20 +8,19 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/cat.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/cat.js
 
 [mitm]
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com， api.rc-backup.com
 
 *************************************/
 
 
-const chxm1024 = {};
-const headers = $request.headers;
-const chxm1023 = JSON.parse(typeof $response != "undefined" && $response.body || null);
-const ua = headers['User-Agent'] || headers['user-agent'];
-const bundle_id = headers['X-Client-Bundle-ID'] || headers['x-client-bundle-id'];
+
+let obj = {}, ddm = JSON.parse(typeof $response != "undefined" && $response.body || "{}");
+
+const headers = $request.headers, ua = headers['User-Agent'] || headers['user-agent'], bundle_id = headers['X-Client-Bundle-ID'] || headers['x-client-bundle-id'];
 
 //排除已禁止MITM的APP
 const forbiddenApps = ['Fileball', 'APTV', 'Forward','Forward/50', 'Forward/65'];
@@ -311,10 +310,10 @@ const list = {
 if (typeof $response == "undefined") {
   delete headers["x-revenuecat-etag"];
   delete headers["X-RevenueCat-ETag"];
-  chxm1024.headers = headers;
-} else if (chxm1023 && chxm1023.subscriber) {
-  chxm1023.subscriber.subscriptions = chxm1023.subscriber.subscriptions || {};
-  chxm1023.subscriber.entitlements = chxm1023.subscriber.entitlements || {};
+  obj.headers = headers;
+} else if (ddm && ddm.subscriber) {
+  ddm.subscriber.subscriptions = ddm.subscriber.subscriptions || {};
+  ddm.subscriber.entitlements = ddm.subscriber.entitlements || {};
   let name,nameb,ids,idb,data;
   for (const src of [list, bundle]) {
     for (const i in src) {
@@ -329,19 +328,19 @@ if (typeof $response == "undefined") {
   if (!name || !ids) {
     data = {  "purchase_date" : "2023-09-09T09:09:09Z",  "expires_date" : "2099-09-09T09:09:09Z" };
     name = 'pro';
-    ids = 'com.chxm1023.pro';
+    ids = 'com.ddm.pro';
   }
-  chxm1023.subscriber.entitlements[name] = Object.assign({}, data, { product_identifier: ids });
+  ddm.subscriber.entitlements[name] = Object.assign({}, data, { product_identifier: ids });
   if (typeof nameb !== 'undefined' && nameb !== null) {
-    chxm1023.subscriber.entitlements[nameb] = Object.assign({}, data, { product_identifier: idb });
+    ddm.subscriber.entitlements[nameb] = Object.assign({}, data, { product_identifier: idb });
   }
-  const subData = Object.assign({},data,{  "Author": "chxm1023",  "Telegram": "https://t.me/chxm1023",  "warning": "仅供学习，禁止转载或售卖",  "original_purchase_date": "2023-09-09T09:09:09Z",  "store": "app_store",  "ownership_type": "PURCHASED"  });
-  chxm1023.subscriber.subscriptions[ids] = subData;
+  const subData = Object.assign({},data,{  "Author": "ddm",  "Telegram": "https://t.me/ddm",  "warning": "仅供学习，禁止转载或售卖",  "original_purchase_date": "2023-09-09T09:09:09Z",  "store": "app_store",  "ownership_type": "PURCHASED"  });
+  ddm.subscriber.subscriptions[ids] = subData;
   if (typeof idb !== 'undefined' && idb !== null) {
-    chxm1023.subscriber.subscriptions[idb] = subData;
+    ddm.subscriber.subscriptions[idb] = subData;
   }
-  chxm1024.body = JSON.stringify(chxm1023);
+  obj.body = JSON.stringify(ddm);
   console.log('已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/chxm1023');
 }
 
-$done(chxm1024);
+$done(obj);
