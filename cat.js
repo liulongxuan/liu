@@ -1,25 +1,25 @@
-名称：Revenuecat 系列解锁合集
+：Revenuecat 系列解锁合集
 下载地址：https://too.st/CollectionsAPP
 更新日期：2024-10-06
-脚本作者：liulongxuan
+脚本作者：chxm1023
 电报频道：https://t.me/chxm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
 
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/cat.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/cat.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Reheji.js
 
 [mitm]
-hostname = api.revenuecat.com， api.rc-backup.com
+hostname = api.revenuecat.com
 
 *************************************/
 
 
-const liulongxuan = {};
+const chxm1024 = {};
 const headers = $request.headers;
-const liulongxuan = JSON.parse(typeof $response != "undefined" && $response.body || null);
+const chxm1023 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 const ua = headers['User-Agent'] || headers['user-agent'];
 const bundle_id = headers['X-Client-Bundle-ID'] || headers['x-client-bundle-id'];
 
@@ -33,16 +33,6 @@ if (forbiddenAppFound) {
 
 //识别bundle_id
 const bundle = {
-   'com.OfflineMusic.www': { name: 'premium', id: 'com.OfflineMusic.www.lifetime298', cm: 'sjb' },  //维克音乐
-  'com.ausoco.umai': { name: 'umai_pro', id: 'umai_pro_yearly', cm: 'sja' },  //UmAI
-  'camp.user.penbook': { name: 'pro', id: 'penbook.lifetime01', cm: 'sjb' },  //Penbook-智能笔记本
-  'design.yugen.Flow': { name: 'pro', id: 'design.yugen.Flow.Lifetime', cm: 'sja' },  //Flow-番茄工作/专注计时器
-  'com.runbuddy.prod': { name: 'premium', id: 'rb_9999_1y_1y7999', cm: 'sja' },  //Runna-马拉松训练
-  'TeleprompterX': { name: 'Pro Upgrade', id: 'TPXOTP', cm: 'sjb' },  //Teleprompter
-  'com.exoplanet.chatme': { name: 'premium', id: 'chatme_premium_year_trial', cm: 'sja' },  //ChatMe
-  'com.reku.Counter': { name: 'plus', id: 'com.reku.counter.plus.lifetime', cm: 'sjb' },  //Counter-计步器
-  'moonbox.co.il.grow': { name: 'pro', id: 'moonbox.co.il.grow.lifetime.offer', cm: 'sjb' },  //植物识别-PlantID
-
   'tech.miidii.MDClock': { name: 'Entitlement.Pro', id: 'tech.miidii.MDClock.pro', cm: 'sjb' },  //谜底时钟
   'com.voicedream.Voic': { name: 'standard', id: 'vd_annual_79_3daytrial', cm: 'sja' },  //声之梦
   'com.laser-focused.focus-ios': { name: 'subscribed', id: 'iap.io.masterbuilders.focus.pro_one_year', cm: 'sja' },  //Focus-专注时间管理
@@ -321,10 +311,10 @@ const list = {
 if (typeof $response == "undefined") {
   delete headers["x-revenuecat-etag"];
   delete headers["X-RevenueCat-ETag"];
-  liulongxuan.headers = headers;
-} else if (liulongxuan && liulongxuan.subscriber) {
-  liulongxuan.subscriber.subscriptions = liulongxuan.subscriber.subscriptions || {};
-  liulongxuan.subscriber.entitlements = liulongxuan.subscriber.entitlements || {};
+  chxm1024.headers = headers;
+} else if (chxm1023 && chxm1023.subscriber) {
+  chxm1023.subscriber.subscriptions = chxm1023.subscriber.subscriptions || {};
+  chxm1023.subscriber.entitlements = chxm1023.subscriber.entitlements || {};
   let name,nameb,ids,idb,data;
   for (const src of [list, bundle]) {
     for (const i in src) {
@@ -339,19 +329,19 @@ if (typeof $response == "undefined") {
   if (!name || !ids) {
     data = {  "purchase_date" : "2023-09-09T09:09:09Z",  "expires_date" : "2099-09-09T09:09:09Z" };
     name = 'pro';
-    ids = 'com.liulongxuan.pro';
+    ids = 'com.chxm1023.pro';
   }
-  liulongxuan.subscriber.entitlements[name] = Object.assign({}, data, { product_identifier: ids });
+  chxm1023.subscriber.entitlements[name] = Object.assign({}, data, { product_identifier: ids });
   if (typeof nameb !== 'undefined' && nameb !== null) {
-    liulongxuan.subscriber.entitlements[nameb] = Object.assign({}, data, { product_identifier: idb });
+    chxm1023.subscriber.entitlements[nameb] = Object.assign({}, data, { product_identifier: idb });
   }
-  const subData = Object.assign({},data,{  "Author": "liulongxuan",  "Telegram": "https://t.me/liulongxuan",  "warning": "仅供学习，禁止转载或售卖",  "original_purchase_date": "2023-09-09T09:09:09Z",  "store": "app_store",  "ownership_type": "PURCHASED"  });
-  liulongxuan.subscriber.subscriptions[ids] = subData;
+  const subData = Object.assign({},data,{  "Author": "chxm1023",  "Telegram": "https://t.me/chxm1023",  "warning": "仅供学习，禁止转载或售卖",  "original_purchase_date": "2023-09-09T09:09:09Z",  "store": "app_store",  "ownership_type": "PURCHASED"  });
+  chxm1023.subscriber.subscriptions[ids] = subData;
   if (typeof idb !== 'undefined' && idb !== null) {
-    liulongxuan.subscriber.subscriptions[idb] = subData;
+    chxm1023.subscriber.subscriptions[idb] = subData;
   }
-  liulongxuan.body = JSON.stringify(liulongxuan);
-  console.log('已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/liulongxuan');
+  chxm1024.body = JSON.stringify(chxm1023);
+  console.log('已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/chxm1023');
 }
 
-$done(liulongxuan);
+$done(chxm1024);
