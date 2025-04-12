@@ -17,7 +17,7 @@ hostname = api.revenuecat.com， api.rc-backup.com
 *************************************/
 
 
-const chxm1024 = {};
+const liulongxuan = {};
 const headers = $request.headers;
 const liulongxuan = JSON.parse(typeof $response != "undefined" && $response.body || null);
 const ua = headers['User-Agent'] || headers['user-agent'];
@@ -321,7 +321,7 @@ const list = {
 if (typeof $response == "undefined") {
   delete headers["x-revenuecat-etag"];
   delete headers["X-RevenueCat-ETag"];
-  chxm1024.headers = headers;
+  liulongxuan.headers = headers;
 } else if (liulongxuan && liulongxuan.subscriber) {
   liulongxuan.subscriber.subscriptions = liulongxuan.subscriber.subscriptions || {};
   liulongxuan.subscriber.entitlements = liulongxuan.subscriber.entitlements || {};
@@ -350,8 +350,8 @@ if (typeof $response == "undefined") {
   if (typeof idb !== 'undefined' && idb !== null) {
     liulongxuan.subscriber.subscriptions[idb] = subData;
   }
-  chxm1024.body = JSON.stringify(liulongxuan);
+  liulongxuan.body = JSON.stringify(liulongxuan);
   console.log('已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/liulongxuan');
 }
 
-$done(chxm1024);
+$done(liulongxuan);
