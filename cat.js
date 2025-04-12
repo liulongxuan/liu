@@ -12,7 +12,7 @@
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/cat.js
 
 [mitm]
-hostname = api.revenuecat.com
+hostname = api.revenuecat.com， api.rc-backup.com
 
 *************************************/
 
