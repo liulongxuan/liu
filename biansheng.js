@@ -9,12 +9,12 @@ hostname = appss.baomingding.com
 *******************************/
 
 // 获取响应体
-var aFengYe = $response.body;
+var liulongxuan = $response.body;
 
 // 初始化一个用于错误捕获的函数
 try {
     // 尝试解析 JSON 数据
-    var obj = JSON.parse(aFengYe);
+    var obj = JSON.parse(liulongxuan);
     
     // 检查请求 URL 是否包含特定路径
     if ($request.url.indexOf("/app/account/getAccountInfo") !== -1) {
@@ -39,11 +39,11 @@ try {
     }
 
     // 将修改后的对象转换回字符串
-    aFengYe = JSON.stringify(obj);
+    liulongxuan = JSON.stringify(obj);
 } catch (e) {
     // 捕获并记录任何错误
     console.error("解析或处理过程中出现错误: " + e.message);
 }
 
 // 输出处理完成
-$done(aFengYe);
+$done(liulongxuan);
