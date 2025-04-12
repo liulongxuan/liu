@@ -1,49 +1,32 @@
-/*******************************
+/******************************
+脚本功能：变声器-解锁会员
+脚本作者：afengye
+脚本频道：https://t.me/afengye
+更新时间：2024-07-06
+使用声明：️仅供学习交流, 🈲️商业用途
+*******************************
 [rewrite_local]
 ^https:\/\/appss\.baomingding\.com\/ url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/biansheng.js
-
 [mitm] 
 hostname = appss.baomingding.com
-
-
 *******************************/
 
-// 获取响应体
-var liulongxuan = $response.body;
+var aFengYe = $response.body;
+var obj =  JSON.parse(aFengYe);
 
-// 初始化一个用于错误捕获的函数
-try {
-    // 尝试解析 JSON 数据
-    var obj = JSON.parse(liulongxuan);
-    
-    // 检查请求 URL 是否包含特定路径
-    if ($request.url.indexOf("/app/account/getAccountInfo") !== -1) {
-        console.log("匹配到 getAccountInfo URL");
-
-        // 更新对象中的特定字段
-        obj.result.type = "VIP";
-        obj.result.freeFlag = "YES";
-        obj.result.vipExpireDays = 99999999999;
-        obj.result.vipExpireTime = "2999-01-01 00:00:00";
-        obj.result.vipGroupInfos = [
-            {
-                "groupType": "TYPE_ONE",
-                "vipType": "VIP",
-                "autoPay": "YES"
-            }
-        ];
-
-        console.log("对象修改成功: ", JSON.stringify(obj));
-    } else {
-        console.log("未匹配到目标URL");
-    }
-
-    // 将修改后的对象转换回字符串
-    liulongxuan = JSON.stringify(obj);
-} catch (e) {
-    // 捕获并记录任何错误
-    console.error("解析或处理过程中出现错误: " + e.message);
+if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
+    obj.result.type = "VIP";
+    obj.result.freeFlag = "YES";
+    obj.result.vipExpireDays = 99999999999;
+    obj.result.vipExpireTime = "2999-01-01 00:00:00";
+    obj.result.vipGroupInfos = [
+       {
+        "groupType" : "TYPE_ONE",
+        "vipType" : "VIP",
+        "autoPay" : "YES"
+      }
+    ];
 }
 
-// 输出处理完成
-$done(liulongxuan);
+aFengYe = JSON.stringify(obj);
+$done(aFengYe);
