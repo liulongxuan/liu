@@ -13,10 +13,10 @@ long = {
    "groupType" : "TYPE_ONE",
         "vipType" : "VIP",
         "autoPay" : "YES"
-         "type" = "VIP";
-    "freeFlag" = "YES";
-  "vipExpireDays" = 99999999999;
-   "vipExpireTime" = "2999-01-01 00:00:00";
+         "type" =:"VIP";
+    "freeFlag" : "YES";
+  "vipExpireDays" : 99999999999;
+   "vipExpireTime" : "2999-01-01 00:00:00";
 };
 $done({
     'body': JSON['stringify'](long)
