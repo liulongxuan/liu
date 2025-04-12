@@ -8,8 +8,8 @@ hostname = appss.baomingding.com
 
 *******************************/
 
-var aFengYe = $response.body;
-var obj =  JSON.parse(aFengYe);
+var liu = $response.body;
+var obj =  JSON.parse(liu);
 
 if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     obj.result.type = "VIP";
@@ -25,5 +25,5 @@ if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     ];
 }
 
-aFengYe = JSON.stringify(obj);
-$done(aFengYe);
+liu = JSON.stringify(obj);
+$done(liu);
