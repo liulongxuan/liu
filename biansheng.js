@@ -7,9 +7,9 @@ hostname = appss.baomingding.com
 
 
  */
- 
-var liulongxuan = $response.body;
-var obj =  JSON.parse(liulongxuan);
+
+var aFengYe = $response.body;
+var obj =  JSON.parse(aFengYe);
 
 if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     obj.result.type = "VIP";
@@ -25,5 +25,5 @@ if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     ];
 }
 
-liulongxuan = JSON.stringify(obj);
-$done(liulongxuan);
+aFengYe = JSON.stringify(obj);
+$done(aFengYe);
