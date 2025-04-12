@@ -26,7 +26,7 @@ const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
 const bundle_id = liulongxuan.receipt["bundle_id"] || liulongxuan.receipt["Bundle_Id"];
 
 const list = {
-    'com.wedobest.xiangqi com': { cm: 'sjbla', hx: 'hxpda', id: "com.wedobest.xiangqi.removeads", latest: "liulongxuan" },  //象棋
+    'com.wedobest.xiangqi com': { cm: 'sjbla', hx: 'hxpda', id: "com.wedobest.xiangqi100rb", latest: "liulongxuan" },  //象棋
    'FlashTransportMaster': { cm: 'sjbla', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "liulongxuan" },  //时光罐罐
   'com.ideack.ASR': { cm: 'sjblb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "liulongxuan" },  //录音转文字
   'Presets': { cm: 'sjbla', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "liulongxuan" },  //Presets:照片处理、图像编辑器
