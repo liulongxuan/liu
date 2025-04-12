@@ -1,6 +1,6 @@
 [rewrite_local] 
 
-^https:\/\/appss\.baomingding\.com\/ url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/biansheng.js
+^https:\/\/appss\.baomingding\.com\/ url script-response-body https://raw.githubusercontent.com/liuliulongxuanxuan/liu/refs/heads/main/biansheng.js
 
 [MITM]
 hostname = appss.baomingding.com
@@ -8,8 +8,8 @@ hostname = appss.baomingding.com
 
  */
  
-var long = $response.body;
-var obj =  JSON.parse(long);
+var liulongxuan = $response.body;
+var obj =  JSON.parse(liulongxuan);
 
 if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
     obj.result.type = "VIP";
@@ -26,4 +26,4 @@ if($request.url.indexOf("/app/account/getAccountInfo") != -1) {
 }
 
 aFengYe = JSON.stringify(obj);
-$done(long);
+$done(liulongxuan);
