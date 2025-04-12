@@ -1,4 +1,4 @@
-*******************************
+/*******************************
 [rewrite_local]
 ^https:\/\/appss\.baomingding\.com\/ url script-response-body https://raw.githubusercontent.com/liulongxuan/liu/refs/heads/main/biansheng.js
 
