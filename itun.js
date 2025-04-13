@@ -32,7 +32,7 @@ const list = {
   'com.ideack.ASR': { cm: 'sjblb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm" },  //录音转文字
   'Presets': { cm: 'sjbla', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm" },  //Presets:照片处理、图像编辑器
   'GoodTask': { cm: 'sjblb', hx: 'hxpda', id: "com.hahainteractive.goodtask3.pro", latest: "ddm" },  //代办事项清单-GoodTask
-  'com.hanchongzan.period': { cm: 'sjblb', hx: 'hxpda', id: "com.hanchongzan.period.boyYear", latest: "ddm" },  //姨妈来咯
+  'com.hanchongzan.period': { cm: 'sjblb', hx: 'hxpda', id: "com.hanchongzan.period.girl", latest: "ddm" },  //姨妈来咯
     'com.hanchongzan.book': { cm: 'sjblb', hx: 'hxpda', id: "com.hanchongzan.book.vip", latest: "ddm" }, //闪电记账
   'SoundLab': { cm: 'sjblb', hx: 'hxpda', id: "8001", latest: "ddm" },  //合声-音乐制作
   'ECGANALYZER': { cm: 'sjbla', hx: 'hxpda', id: "com.wms.hrv.yearlyfamilysharing", latest: "ddm" }, //ECG+
