@@ -26,6 +26,7 @@ const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
 const bundle_id = ddm.receipt["bundle_id"] || ddm.receipt["Bundle_Id"];
 
 const list = {
+     'es.produkt.app.panels': { cm: 'sjblb', hx: 'hxpda', id: "es.produkt.app.panels.iap.premium3upgrade", latest: "ddm" },  //panels
     'com.wedobest.xiangqi': { cm: 'sjblb', hx: 'hxpda', id: "com.wedobest.xiangqi.removeads", latest: "ddm" },  //象棋
    'FlashTransportMaster': { cm: 'sjbla', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm" },  //时光罐罐
   'com.ideack.ASR': { cm: 'sjblb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm" },  //录音转文字
