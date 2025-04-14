@@ -1,9 +1,7 @@
 /*************************************
 
-项目名称：iTunes-系列解锁合集
-更新日期：2025-04-13
-脚本作者：@ddm1023
-电报频道：https://t.me/ddm1023
+：iTunes-
+脚本作者：@ddm
 使用声明：⚠️仅供参考，🈲转载与售卖！
 使用说明：如果脚本无效，请先排除是否脚本冲突
 特别说明：此脚本可能会导致App Store无法登录ID
@@ -29,6 +27,8 @@ const yearlysubscription = `${bundle_id}.yearlysubscription`;
 const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
+  'es.produkt.app.panels': { cm: 'sjbla', hx: 'hxpda', id: " es.produkt.app.panels.sub.year", latest: "ddm" },  //panels
+    'com.wedobest.xiangqi': { cm: 'sjblb', hx: 'hxpda', id: "com.wedobest.xiangqi.removeads", latest: "ddm" },  //象棋
   'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
   'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm1023" },  //录音转文字
   'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm1023" },  //Presets:照片处理、图像编辑器
