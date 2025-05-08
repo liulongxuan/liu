@@ -28,7 +28,7 @@ const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
   'es.produkt.app.panels': { cm: 'sjbla', hx: 'hxpda', id: " es.produkt.app.panels.sub.year", latest: "ddm" },  //panels
-    'com.wedobest.xiangqi': { cm: 'sjblb', hx: 'hxpda', id: "com.wedobest.xiangqi.removeads", latest: "ddm" },  //象棋
+    'com.liangpin.hireader': { cm: 'timeb', hx: 'hxpda', id: " HiReader_Lifetime", latest: "ddm" },  //hireader
   'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
   'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm1023" },  //录音转文字
   'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm1023" },  //Presets:照片处理、图像编辑器
