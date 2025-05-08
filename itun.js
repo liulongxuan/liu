@@ -27,7 +27,7 @@ const bundle_id = ddm.receipt["bundle_id"] || ddm.receipt["Bundle_Id"];
 
 const list = {
      'es.produkt.app.panels': { cm: 'sjbla', hx: 'hxpda', id: " es.produkt.app.panels.sub.year", latest: "ddm" },  //panels
-    'com.liangpin.hireader': { cm: 'sjblb', hx: 'hxpda', id: " HiReader_Lifetime", latest: "ddm" },  //hireader
+    'com.liangpin.hireader': { cm: 'sjbla', hx: 'hxpda', id: " HiReader_Monthly", latest: "ddm" },  //hireader
    'FlashTransportMaster': { cm: 'sjbla', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm" },  //时光罐罐
   'com.ideack.ASR': { cm: 'sjblb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm" },  //录音转文字
   'Presets': { cm: 'sjbla', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm" },  //Presets:照片处理、图像编辑器
