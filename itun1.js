@@ -27,7 +27,8 @@ const yearlysubscription = `${bundle_id}.yearlysubscription`;
 const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
-  'es.produkt.app.panels': { cm: 'sjbla', hx: 'hxpda', id: " es.produkt.app.panels.sub.year", latest: "ddm" },  //panels
+   'com.huynt.screentranslator': { cm: 'timeb', hx: 'hxpda', id: "com.huynt.ezscreentranslator.onetimepurchase", latest: "ddm1023" }, //翻译
+  'es.produkt.app.panels': { cm: 'timea', hx: 'hxpda', id: " es.produkt.app.panels.sub.year", latest: "ddm" },  //panels
     'com.liangpin.hireader': { cm: 'timeb', hx: 'hxpda', id: " HiReader_Lifetime", latest: "ddm" },  //hireader
   'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
   'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm1023" },  //录音转文字
