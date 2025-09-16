@@ -1,1 +1,82 @@
+name: Build Jailbreak Plugin DEB
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup plugin deb structure
+        run: |
+          mkdir -p build/slb-plugin/DEBIAN
+          mkdir -p build/slb-plugin/Library/QuantumultX/Scripts
+
+          # 写 control 文件
+          cat > build/slb-plugin/DEBIAN/control <<EOF
+          Package: slb-plugin
+          Name: Suanliaobao Unlock
+          Version: ${GITHUB_REF_NAME#v}
+          Section: Tweaks
+          Priority: optional
+          Architecture: iphoneos-arm
+          Maintainer: Your Name <you@example.com>
+          Description: Inject QuantumultX script for Suanliaobao VIP unlock
+          EOF
+
+          # 写 postinst
+          cat > build/slb-plugin/DEBIAN/postinst <<'EOF'
+          #!/bin/sh
+          set -e
+          mkdir -p /var/mobile/Documents/QuantumultX/Scripts
+          cp /Library/QuantumultX/Scripts/slb.js /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          chmod 644 /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          exit 0
+          EOF
+          chmod 755 build/slb-plugin/DEBIAN/postinst
+
+          # 写 prerm
+          cat > build/slb-plugin/DEBIAN/prerm <<'EOF'
+          #!/bin/sh
+          set -e
+          rm -f /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          exit 0
+          EOF
+          chmod 755 build/slb-plugin/DEBIAN/prerm
+
+          # 写 slb.js
+          cat > build/slb-plugin/Library/QuantumultX/Scripts/slb.js <<'EOF'
+          let obj = JSON.parse($response.body);
+
+          if (obj.data) {
+            obj.data.memberType = "vip";
+            obj.data.expireTime = "2999-01-01";
+          }
+
+          $done({ body: JSON.stringify(obj) });
+          EOF
+
+      - name: Build plugin deb
+        run: |
+          dpkg-deb --build build/slb-plugin
+
+      - name: Upload deb artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slb-plugin-deb
+          path: build/slb-plugin.deb
+
+      - name: Release deb on GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/slb-plugin.deb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
