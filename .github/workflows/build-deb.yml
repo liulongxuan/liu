@@ -79,4 +79,56 @@ jobs:
           files: build/slb-plugin.deb
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                - name: Setup plugin deb structure
+        run: |
+          mkdir -p build/slb-plugin/DEBIAN
+          mkdir -p build/slb-plugin/Library/QuantumultX/Scripts
+
+          # 自动生成版本号：run number + commit 短哈希
+          VERSION="1.0.${GITHUB_RUN_NUMBER}-$(echo $GITHUB_SHA | cut -c1-7)"
+
+          # 写 control 文件
+          cat > build/slb-plugin/DEBIAN/control <<EOF
+          Package: slb-plugin
+          Name: Suanliaobao Unlock
+          Version: $VERSION
+          Section: Tweaks
+          Priority: optional
+          Architecture: iphoneos-arm
+          Maintainer: Your Name <you@example.com>
+          Description: Inject QuantumultX script for Suanliaobao VIP unlock
+          EOF
+
+          # 写 postinst
+          cat > build/slb-plugin/DEBIAN/postinst <<'EOF'
+          #!/bin/sh
+          set -e
+          mkdir -p /var/mobile/Documents/QuantumultX/Scripts
+          cp /Library/QuantumultX/Scripts/slb.js /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          chmod 644 /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          exit 0
+          EOF
+          chmod 755 build/slb-plugin/DEBIAN/postinst
+
+          # 写 prerm
+          cat > build/slb-plugin/DEBIAN/prerm <<'EOF'
+          #!/bin/sh
+          set -e
+          rm -f /var/mobile/Documents/QuantumultX/Scripts/slb.js
+          exit 0
+          EOF
+          chmod 755 build/slb-plugin/DEBIAN/prerm
+
+          # 写 slb.js
+          cat > build/slb-plugin/Library/QuantumultX/Scripts/slb.js <<'EOF'
+          let obj = JSON.parse($response.body);
+
+          if (obj.data) {
+            obj.data.memberType = "vip";
+            obj.data.expireTime = "2999-01-01";
+          }
+
+          $done({ body: JSON.stringify(obj) });
+          EOF
+
 
