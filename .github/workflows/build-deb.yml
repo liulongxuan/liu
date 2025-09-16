@@ -79,7 +79,7 @@ jobs:
           files: build/slb-plugin.deb
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                - name: Setup plugin deb structure
+      - name: Setup plugin deb structure
         run: |
           mkdir -p build/slb-plugin/DEBIAN
           mkdir -p build/slb-plugin/Library/QuantumultX/Scripts
@@ -130,5 +130,3 @@ jobs:
 
           $done({ body: JSON.stringify(obj) });
           EOF
-
-
